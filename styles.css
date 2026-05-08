@@ -113,6 +113,36 @@ h1 {
     color: #888888;
 }
 
+footer {
+    padding: 60px 0;
+    border-top: 1px solid #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #007AFF;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 0 24px;
@@ -127,5 +157,9 @@ h1 {
         grid-template-columns: 1fr;
         padding: 80px 0;
         gap: 20px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
