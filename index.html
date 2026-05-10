@@ -1,63 +1,141 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>FBU | Front End Developer</title>
+    <title>FBU | Front End Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
-    <header>
-        <div class="initials">FBU</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Project</a>
-            <a href="mailto:fadilausman705@gmail.com">Contact</a>
-        </nav>
-    </header>
+    <img src="pictures/pink-tulip.png" class="bg-tulip tulip-top-right" alt="pink tulip">
+    <img src="pictures/purple-tulip.png" class="bg-tulip tulip-bottom-left" alt="purple tulip">
 
-    <main>
-        <section id="home">
-            <h1>Hi, I am Fadila Bala Usman,
-                a Software Engineering Student and 
-                <span class="accent">Front End Developer.</span></h1>
-                <p class="subtitle">Building robust systems and seamless 
-                   user experiences with a minimalist touch.</p>
-        </section>
+    <nav>
+        <div class="logo">🌷 FBU</div>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certs">Certifications</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am currently studying software engineering
-               at Maryam Abacha American University, Kano.</p>
-            <div class="skills"></div>
-        </section>
-
-        <section id="projects">
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project One</h3>
-                    <p class="info">Online Shopping Store</p>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Two</h3>
-                    <p class="info">Bookstore website</p>
-                </div>
+    <header id="home">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Fadila Bala Usman</span></h1>
+                <p class="subtitle">Student | Creative Explorer | Tech Enthusiast</p>
+                <a href="#contact" class="btn btn-link">Let's Work Together</a>
+            </div>
+            <div class="profile-frame">
+                <img src="pictures/my-image.jpg" class="profile-img" alt="Profile">
             </div>
         </section>
-    </main>
+    </header>
+
+    <section id="about">
+        <div class="glass-card">
+            <h2>About Me</h2>
+            <p>I am a Software Engineering student in Maryam Abacha American Univerity of Nigeria.
+               I am passionate about building beautiful digital experiences. 
+               My work focuses on functional and beautiful designs.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="devicon-html5-plain"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-css3-plain"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-javascript-plain"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="devicon-git-plain"></i>
+                <h3>Git</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certifications</h2>
+        <div class="grid">
+            <div class="glass-card cert-card">
+                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>BSC Software Engineering<br>(Ongoing)</h3>
+                <p>Issued by: Organization</p>
+                <a href="#" target="_blank" class="view-cert">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="glass-card cert-card">
+                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>JavaScript(Basic)</h3>
+                <p>Issued by: HackerRank</p>
+                <a href="https://www.hackerrank.com/certificates/5cd90d990a1c" target="_blank" class="view-cert">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div class="glass-card cert-card">
+                <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>Web Development<br>(Ongoing)</h3>
+                <p>Issued by: KAD ICT Hub</p>
+                <a href="#" target="_blank" class="view-cert">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="grid">
+        <div class="project-card glass-card">
+            <h3>Project One</h3>
+            <p>Brief Description of the project.</p>
+            <a href="#" target="_blank" class="view-link">View Project</a>
+        </div>
+
+        <div class="project-card glass-card">
+            <h3>Project Two</h3>
+            <p>Brief Description of the project.</p>
+            <a href="#" target="_blank" class="view-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="hidden" name="access_key" value="8089ce4c-911d-43ca-b120-16d7564ed642">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="5" placeholder="Message" required style="resize: none;"></textarea>
+            <button type="submit" class="btn">Send Message 🌷</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Fadila Bala Usman</p>
-        <div class="socials">
-            <a href="tel:+234 9091936293">Whatsapp</a>
-            <a href="https://github.com/fadeelah2007">Github</a>
+        <div class="social-links">
+            <a href="mailto:fadilausman705@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/2349091936293" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://github.com/fadeelah2007" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/_.fadilaaaaa._" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
+        <p>&copy; 2026 Fadila Bala Usman.</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
